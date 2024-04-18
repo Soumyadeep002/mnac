@@ -9,6 +9,8 @@
       <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Demo styles -->
   <style>
     
@@ -94,16 +96,16 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="background-image: url('assets/imgs/slider-1701763433.jpeg'); background-repeat: no-repeat; background-size: cover;">
                         <div class=" bg-black bg-opacity-70 w-full h-screen flex flex-col justify-center items-center text-white px-28 gap-y-5">
-                            <div class="sub-head text-3xl md:text-4xl font-bold">Welcome to</div>
-                            <div class="sub-head text-5xl md:text-6xl font-bold">MAKAUT NATURE & ADVENTURE CLUB</div>
+                            <div id="welcome" data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="top-center" data-aos-mirror="false" class="sub-head text-3xl md:text-4xl font-bold">Welcome to</div>
+                            <div data-aos="fade-down" data-aos-duration="1000" data-aos-anchor="#welcome" data-aos-anchor-placement="top-center" data-aos-mirror="false" class="sub-head text-5xl md:text-6xl font-bold">MAKAUT NATURE & ADVENTURE CLUB</div>
                         </div>
                     </div>
                     <div class="swiper-slide" style="background-image: url('https://lesgeckos.eu/wp-content/uploads/2020/03/rock-climbing-courses-for-beginners-00001.jpg.webp'); background-repeat: no-repeat; background-size: cover; background-position: 40%;">
                         <div class=" bg-black bg-opacity-70 w-full h-screen flex flex-col justify-center items-start gap-5 text-white px-16 md:px-28 lg:px-60
                         ">
                             <div class=" flex flex-col items-start"> 
-                                <div class="sub-head text-lg md:text-2xl font-bold"><span class="text-2xl md:text-4xl">3</span>rd</div>
-                                <div class="sub-head text-4xl md:text-6xl font-bold text-left">Rock Climbing & Nature Study Camp</div>
+                                <div data-aos="fade-down" class="sub-head text-lg md:text-2xl font-bold"><span class="text-2xl md:text-4xl">3</span>rd</div>
+                                <div data-aos="fade-down" class="sub-head text-4xl md:text-6xl font-bold text-left">Rock Climbing & Nature Study Camp</div>
                             </div>
                             <p class="w-full md:w-1/2 text-left"> 
                                 Embark on a thrilling journey! Ascend rocky cliffs, explore diverse ecosystems, and deepen your understanding of nature's wonders. Experience adventure!
@@ -127,9 +129,9 @@
             <div class="w-screen py-12 px-5">
                 <div class="w-full md:w-3/4 px-1 md:px-5 py-5 mx-auto flex flex-col md:flex-row gap-10 justify-center items-center">
                     <div class="left w-full md:w-1/2 flex justify-center items-center">
-                        <img class="w-[24rem] md:w-[26rem] lg:w-[28rem] rounded-lg drop-shadow-xl hover:scale-105 duration-500 transition-all" src="assets/imgs/IMG-20240415-WA0026.jpg" alt="">
+                        <img data-aos="fade-up" data-aos-duration="800" class="w-[24rem] md:w-[26rem] lg:w-[28rem] rounded-lg drop-shadow-xl hover:scale-105 duration-500 transition-all" src="assets/imgs/IMG-20240415-WA0026.jpg" alt="">
                     </div>
-                    <div class="right w-full md:w-1/2">
+                    <div data-aos="fade-down" data-aos-duration="800" class="right w-full md:w-1/2">
                         <div class="flex flex-row justify-start">
                             <img class="w-[8rem] md:w-[10rem]" src="assets/logo/Makaut NATURE & ADVENTURE CLUB 1.png" alt="" srcset="">
                             <div class="text-4xl relative translate-x-5 translate-y-6">
@@ -155,10 +157,10 @@
                 <div class=" bg-black bg-opacity-45 w-full h-full flex flex-col justify-center items-center text-white px-28 gap-y-3">
                     <div class="circles flex flex-col py-8 gap-8 md:gap-16 justify-center items-center">
                         <img class=" order-1 md:order-2 w-[8rem] md:w-[10rem] rounded-full aspect-square lg:absolute lg:translate-y-24" src="assets/logo/mnac trans 1@5x.png" alt="" srcset="">
-                        <div class=" order-2 hover:scale-105 hover:bg-neutral-300 duration-500 transition-all md:order-1 w-[8rem] md:w-[10rem] h-[8rem] md:h-[10rem] aspect-square bg-white rounded-full"></div>
+                        <div class=" order-2 hover:scale-105 hover:bg-neutral-300 duration-500 transition-all md:order-1 w-[7rem] md:w-[9rem] h-[7rem] md:h-[9rem] aspect-square bg-white rounded-full"></div>
                         <div class=" order-3 flex flex-col sm:flex-row gap-8 sm:gap-24 md:gap-32">
-                            <div class="w-[8rem] hover:scale-105 hover:bg-neutral-300 duration-500 transition-all md:w-[10rem] h-[8rem] md:h-[10rem]  aspect-square bg-white rounded-full static md:relative md:-translate-x-28 lg:-translate-x-44"></div>
-                            <div class="w-[8rem] hover:scale-105 hover:bg-neutral-300 duration-500 transition-all md:w-[10rem] h-[8rem] md:h-[10rem]  aspect-square bg-white rounded-full static md:relative md:translate-x-28 lg:translate-x-44"></div>
+                            <div class="w-[7rem] hover:scale-105 hover:bg-neutral-300 duration-500 transition-all md:w-[9rem] h-[7rem] md:h-[9rem]  aspect-square bg-white rounded-full static md:relative md:-translate-x-28 lg:-translate-x-44"></div>
+                            <div class="w-[7rem] hover:scale-105 hover:bg-neutral-300 duration-500 transition-all md:w-[9rem] h-[7rem] md:h-[9rem]  aspect-square bg-white rounded-full static md:relative md:translate-x-28 lg:translate-x-44"></div>
                         </div>
 
 
@@ -171,16 +173,16 @@
         <!-- activities  -->
         <section id="activity">
             <div class="w-screen py-20 px-5">
-                <div class="w-full md:w-3/5 bg-red-300 mx-auto">
+                <div class="w-full md:w-3/5 bg-neutral-300 mx-auto">
                     <div id="top" class="w-full flex flex-col md:flex-row">
                         <div class="w-full md:w-1/2">
-                            <img id="myimage" class="w-full h-full aspect-[4/3]" src="assets/imgs/act1.jpg" alt="">
+                            <img data-aos="fade-down" data-aos-duration="500" id="myimage" class="w-full h-full aspect-[4/3]" src="assets/imgs/act1.jpg" alt="">
                         </div>
                         <div id="content" class="w-full md:w-1/2 aspect-[4/3] bg-neutral-300 "></div>
                     </div>
                     <div id="bottom" class="w-full flex flex-col md:flex-row-reverse">
                         <div class="w-full md:w-1/2">
-                            <img id="myimage" class="w-full h-full aspect-[4/3]" src="assets/imgs/act2.jpg" alt="">
+                            <img data-aos="fade-down" data-aos-duration="500" id="myimage" class="w-full h-full aspect-[4/3]" src="assets/imgs/act2.jpg" alt="">
                         </div>
                         <div id="content" class="w-full md:w-1/2 aspect-[4/3] bg-neutral-300 "></div>
                     </div>
@@ -200,7 +202,7 @@
                 <!-- all cards  -->
                 <div class="w-full md:w-3/4 px-1 md:px-5 py-12 mx-auto flex flex-wrap gap-12 justify-center items-center">
                     <!-- card   -->
-                    <div class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
+                    <div data-aos="fade-down" data-aos-duration="500"  class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
                         <div class=" bg-black w-full h-full bg-opacity-60 relative px-10 py-16 translate-y-96 duration-200 transition-transform group-hover:translate-y-0">
                             <p class="text-white mt-20 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet eius delectus aperiam excepturi tempore, a id odio corporis eos unde tenetur ullam laudantium libero.</p>
                             <a href="" class="bg-white text-black px-5 py-2">Read More</a>
@@ -212,7 +214,7 @@
                     </div>
                     <!-- end of card   -->
                       <!-- card   -->
-                      <div class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
+                      <div data-aos="fade-down" data-aos-duration="500"  class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
                         <div class=" bg-black w-full h-full bg-opacity-60 relative px-10 py-16 translate-y-96 duration-200 transition-transform group-hover:translate-y-0">
                             <p class="text-white mt-20 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet eius delectus aperiam excepturi tempore, a id odio corporis eos unde tenetur ullam laudantium libero.</p>
                             <a href="" class="bg-white text-black px-5 py-2">Read More</a>
@@ -243,7 +245,7 @@
                 <!-- all cards  -->
                 <div class="w-full md:w-3/4 px-1 md:px-5 py-12 mx-auto flex flex-wrap gap-12 justify-center items-center">
                     <!-- card   -->
-                    <div class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
+                    <div data-aos="fade-down" data-aos-duration="500"  class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
                         <div class=" bg-black w-full h-full bg-opacity-60 relative px-10 py-16 translate-y-96 duration-200 transition-transform group-hover:translate-y-0">
                             <p class="text-white mt-20 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet eius delectus aperiam excepturi tempore, a id odio corporis eos unde tenetur ullam laudantium libero.</p>
                             <a href="" class="bg-white text-black px-5 py-2">Read More</a>
@@ -255,7 +257,7 @@
                     </div>
                     <!-- end of card   -->
                       <!-- card   -->
-                      <div class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
+                      <div data-aos="fade-down" data-aos-duration="500"  class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
                         <div class=" bg-black w-full h-full bg-opacity-60 relative px-10 py-16 translate-y-96 duration-200 transition-transform group-hover:translate-y-0">
                             <p class="text-white mt-20 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet eius delectus aperiam excepturi tempore, a id odio corporis eos unde tenetur ullam laudantium libero.</p>
                             <a href="" class="bg-white text-black px-5 py-2">Read More</a>
@@ -267,7 +269,7 @@
                     </div>
                     <!-- end of card   -->
                       <!-- card   -->
-                      <div class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
+                      <div data-aos="fade-down" data-aos-duration="500"  class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
                         <div class=" bg-black w-full h-full bg-opacity-60 relative px-10 py-16 translate-y-96 duration-200 transition-transform group-hover:translate-y-0">
                             <p class="text-white mt-20 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet eius delectus aperiam excepturi tempore, a id odio corporis eos unde tenetur ullam laudantium libero.</p>
                             <a href="" class="bg-white text-black px-5 py-2">Read More</a>
@@ -290,10 +292,14 @@
 
     </main>
 
+    <!-- footer  -->
     <footer>
-        <div class="w-full h-96 bg-gray-900"></div>
-    </footer>
+        <div class="w-full h-96 bg-gray-900">
 
+        </div>
+        <div class="w-full bg-gray-900 text-center text-white py-2">Copyright © 2024 soumyadeep. All Rights Reserved. </div>
+    </footer>
+    <!-- end of footer  -->
  
 
     <!-- Swiper JS -->
@@ -307,6 +313,14 @@
             prevEl: ".swiper-button-prev",
         },
         });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out',
+        mirror: true,
+      });
     </script>
 
     <script>
