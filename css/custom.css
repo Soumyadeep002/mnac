@@ -1,0 +1,74 @@
+.gray-image{
+    filter: saturate(0.5);
+    -webkit-filter: saturate(0.5);
+}
+
+.gray-image:hover{
+    filter: saturate(1);
+    -webkit-filter: saturate(1);
+    scale: 110%;
+}
+
+.my-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+#heart_loader{
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .85 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .85 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .85 );
+  }
+  100%
+  {
+    transform: scale( .85 );
+  }
+}
+
+/* preloader  */
+
+  .out-animation{
+    animation: hideloader 1s forwards;
+  
+  }
+  
+  @keyframes hideloader {
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      display: none;
+    }
+  }
+  
+  /* end of preloader  */

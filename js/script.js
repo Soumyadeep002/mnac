@@ -1,0 +1,50 @@
+ // preloader
+ var loader = document.getElementById("preloader");
+
+ window.addEventListener('load', function(){
+ loader.classList.add('out-animation');
+ })
+ // end of preloader 
+
+
+
+ const navbar = document.querySelector("#nav")
+        const menulist = document.querySelector("#menulist")
+        var menuline = document.querySelectorAll(".menu-line")
+        const blacklogo = document.querySelector("#blacklogo")
+        const whitelogo = document.querySelector("#whitelogo")
+
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            if(value > 100){
+            //   navbar.classList.remove("bg-blue-800");
+            navbar.classList.add("bg-white");
+            menulist.classList.remove("md:text-white");
+            menulist.classList.add("md:text-black");
+            blacklogo.classList.add("block")
+            blacklogo.classList.remove("hidden")
+            whitelogo.classList.add("hidden")
+            whitelogo.classList.remove("block")
+
+                for (let i = 0; i < menuline.length; i++) {
+                    menuline[i].classList.remove("bg-white")
+                    menuline[i].classList.add("bg-black")
+                }
+
+            }
+            else{
+            navbar.classList.remove("bg-white");
+            menulist.classList.remove("md:text-black");
+            menulist.classList.add("md:text-white");
+            blacklogo.classList.add("hidden")
+            blacklogo.classList.remove("block")
+            whitelogo.classList.add("block")
+            whitelogo.classList.remove("hidden")
+                for (let i = 0; i < menuline.length; i++) {
+                    menuline[i].classList.add("bg-white")
+                    menuline[i].classList.remove("bg-black")
+                }
+            }
+
+        })

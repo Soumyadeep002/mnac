@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/custom.css">
+
     <title>MNAC</title>
 
       <!-- Link Swiper's CSS -->
@@ -56,7 +58,11 @@
     }
   </style>
 </head>
-<body class=" overflow-x-hidden">
+<body class=" overflow-x-hidden bg-neutral-200 ">
+    <div id="preloader" class="fixed w-screen h-screen bg-gray-900 z-[100] flex flex-col justify-center items-center">
+        <img id="heart_loader" class="w-[10rem]" src="assets/logo/mnac trans 1@5x.png" alt="logo">
+        <div class="text-white text-xl mt-3">Loading ...</div>
+    </div>
     <header>
         <nav id="nav" class="fixed w-screen z-[99] transition-colors duration-300 drop-shadow-lg">
            
@@ -97,7 +103,7 @@
                     <div class="swiper-slide" style="background-image: url('assets/imgs/slider-1701763433.jpeg'); background-repeat: no-repeat; background-size: cover;">
                         <div class=" bg-black bg-opacity-70 w-full h-screen flex flex-col justify-center items-center text-white px-28 gap-y-5">
                             <div id="welcome" data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="top-center" data-aos-mirror="false" class="sub-head text-3xl md:text-4xl font-bold">Welcome to</div>
-                            <div data-aos="fade-down" data-aos-duration="1000" data-aos-anchor="#welcome" data-aos-anchor-placement="top-center" data-aos-mirror="false" class="sub-head text-5xl md:text-6xl font-bold">MAKAUT NATURE & ADVENTURE CLUB</div>
+                            <div data-aos="fade-down" data-aos-duration="1000" data-aos-anchor="#welcome" data-aos-anchor-placement="top-center" data-aos-mirror="false" data-aos-delay="500" class="sub-head text-5xl md:text-6xl font-bold">MAKAUT NATURE & ADVENTURE CLUB</div>
                         </div>
                     </div>
                     <div class="swiper-slide" style="background-image: url('https://lesgeckos.eu/wp-content/uploads/2020/03/rock-climbing-courses-for-beginners-00001.jpg.webp'); background-repeat: no-repeat; background-size: cover; background-position: 40%;">
@@ -110,7 +116,10 @@
                             <p class="w-full md:w-1/2 text-left"> 
                                 Embark on a thrilling journey! Ascend rocky cliffs, explore diverse ecosystems, and deepen your understanding of nature's wonders. Experience adventure!
                             </p>
-                            <div class="text-xl md:text-2xl"><span class="font-bold">Date:</span> TBD</div>
+                            <div class="flex flex-col items-start">
+                                <div class="text-xl md:text-2xl"><span class="font-bold">Place:</span> TBD</div>
+                                <div class="text-xl md:text-2xl"><span class="font-bold">Date:</span> TBD</div>
+                            </div>
 
                             <div class="mt-10 w-full md:w-fit">
                                 <a href="" class=" bg-white text-black px-8 py-4 ">Explore More</a>
@@ -118,8 +127,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <!-- end of home banner  -->
@@ -129,9 +138,9 @@
             <div class="w-screen py-12 px-5">
                 <div class="w-full md:w-3/4 px-1 md:px-5 py-5 mx-auto flex flex-col md:flex-row gap-10 justify-center items-center">
                     <div class="left w-full md:w-1/2 flex justify-center items-center">
-                        <img data-aos="fade-up" data-aos-duration="800" class="w-[24rem] md:w-[26rem] lg:w-[28rem] rounded-lg drop-shadow-xl hover:scale-105 duration-500 transition-all" src="assets/imgs/IMG-20240415-WA0026.jpg" alt="">
+                        <img data-aos="fade-down" data-aos-duration="800" data-aos-delay="20" class="w-[24rem] md:w-[26rem] lg:w-[28rem] rounded-lg drop-shadow-xl hover:scale-105 duration-500 transition-all" src="assets/imgs/IMG-20240415-WA0026.jpg" alt="">
                     </div>
-                    <div data-aos="fade-down" data-aos-duration="800" class="right w-full md:w-1/2">
+                    <div data-aos="fade-down" data-aos-duration="800" data-aos-delay="20" class="right w-full md:w-1/2">
                         <div class="flex flex-row justify-start">
                             <img class="w-[8rem] md:w-[10rem]" src="assets/logo/Makaut NATURE & ADVENTURE CLUB 1.png" alt="" srcset="">
                             <div class="text-4xl relative translate-x-5 translate-y-6">
@@ -173,18 +182,26 @@
         <!-- activities  -->
         <section id="activity">
             <div class="w-screen py-20 px-5">
-                <div class="w-full md:w-3/5 bg-neutral-300 mx-auto">
+                <div class="w-full lg:w-2/3 xl:w-3/5 bg-white rounded-lg shadow-xl overflow-hidden mx-auto">
                     <div id="top" class="w-full flex flex-col md:flex-row">
-                        <div class="w-full md:w-1/2">
-                            <img data-aos="fade-down" data-aos-duration="500" id="myimage" class="w-full h-full aspect-[4/3]" src="assets/imgs/act1.jpg" alt="">
+                        <div class="w-full md:w-1/2 overflow-hidden">
+                            <img data-aos="fade-down" data-aos-duration="500" id="myimage" class="w-full h-full aspect-[4/3] hover:scale-110 gray-image duration-500" src="assets/imgs/act1.jpg" alt="" >
                         </div>
-                        <div id="content" class="w-full md:w-1/2 aspect-[4/3] bg-neutral-300 "></div>
+                        <div id="content" data-aos="fade-down" data-aos-delay="100" class="w-full md:w-1/2 aspect-[4/3] flex flex-col gap-8 py-8 md:py-12 px-7 md:px-10">
+                            <div class="header-title text-2xl font-bold">Header Title</div>
+                            <p class=" text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus illum praesentium quae sit, eius sunt mollitia. Excepturi expedita ducimus mollitia totam voluptatibus placeat, quam dolores saepe magnam eveniet sit facere iste corporis, doloribus quidem eum nihil veritatis fugit rem? Quas nisi hic a. Nisi possimus corporis eius ullam ad velit aspernatur vero voluptatem, doloribus laborum nobis quas. Omnis, architecto aperiam?</p>
+                            <a href=""><div class="btn w-fit bg-black text-white px-8 py-4 ">Read More</div></a>
+                        </div>
                     </div>
                     <div id="bottom" class="w-full flex flex-col md:flex-row-reverse">
-                        <div class="w-full md:w-1/2">
-                            <img data-aos="fade-down" data-aos-duration="500" id="myimage" class="w-full h-full aspect-[4/3]" src="assets/imgs/act2.jpg" alt="">
+                        <div class="w-full md:w-1/2 overflow-hidden">
+                            <img data-aos="fade-down" data-aos-duration="500" id="myimage" class="w-full h-full aspect-[4/3] hover:scale-110 gray-image duration-500" src="assets/imgs/act2.jpg" alt="">
                         </div>
-                        <div id="content" class="w-full md:w-1/2 aspect-[4/3] bg-neutral-300 "></div>
+                        <div id="content" data-aos="fade-down" data-aos-delay="100" class="w-full md:w-1/2 aspect-[4/3] flex flex-col gap-8 py-8 md:py-12 px-7 md:px-10">
+                            <div class="header-title text-2xl font-bold">Header Title</div>
+                            <p class=" text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus illum praesentium quae sit, eius sunt mollitia. Excepturi expedita ducimus mollitia totam voluptatibus placeat, quam dolores saepe magnam eveniet sit facere iste corporis, doloribus quidem eum nihil veritatis fugit rem? Quas nisi hic a. Nisi possimus corporis eius ullam ad velit aspernatur vero voluptatem, doloribus laborum nobis quas. Omnis, architecto aperiam?</p>
+                            <a href=""><div class="btn w-fit bg-black text-white px-8 py-4 my-button">Read More</div></a>
+                        </div>
                     </div>
 
                 </div>
@@ -202,7 +219,7 @@
                 <!-- all cards  -->
                 <div class="w-full md:w-3/4 px-1 md:px-5 py-12 mx-auto flex flex-wrap gap-12 justify-center items-center">
                     <!-- card   -->
-                    <div data-aos="fade-down" data-aos-duration="500"  class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
+                    <div data-aos="fade-down" data-aos-duration="500" class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
                         <div class=" bg-black w-full h-full bg-opacity-60 relative px-10 py-16 translate-y-96 duration-200 transition-transform group-hover:translate-y-0">
                             <p class="text-white mt-20 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet eius delectus aperiam excepturi tempore, a id odio corporis eos unde tenetur ullam laudantium libero.</p>
                             <a href="" class="bg-white text-black px-5 py-2">Read More</a>
@@ -214,7 +231,7 @@
                     </div>
                     <!-- end of card   -->
                       <!-- card   -->
-                      <div data-aos="fade-down" data-aos-duration="500"  class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
+                      <div data-aos="fade-down" data-aos-duration="500" data-aos-delay="100" class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
                         <div class=" bg-black w-full h-full bg-opacity-60 relative px-10 py-16 translate-y-96 duration-200 transition-transform group-hover:translate-y-0">
                             <p class="text-white mt-20 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet eius delectus aperiam excepturi tempore, a id odio corporis eos unde tenetur ullam laudantium libero.</p>
                             <a href="" class="bg-white text-black px-5 py-2">Read More</a>
@@ -257,7 +274,7 @@
                     </div>
                     <!-- end of card   -->
                       <!-- card   -->
-                      <div data-aos="fade-down" data-aos-duration="500"  class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
+                      <div data-aos="fade-down" data-aos-duration="500" data-aos-delay="100" class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
                         <div class=" bg-black w-full h-full bg-opacity-60 relative px-10 py-16 translate-y-96 duration-200 transition-transform group-hover:translate-y-0">
                             <p class="text-white mt-20 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet eius delectus aperiam excepturi tempore, a id odio corporis eos unde tenetur ullam laudantium libero.</p>
                             <a href="" class="bg-white text-black px-5 py-2">Read More</a>
@@ -269,7 +286,7 @@
                     </div>
                     <!-- end of card   -->
                       <!-- card   -->
-                      <div data-aos="fade-down" data-aos-duration="500"  class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
+                      <div data-aos="fade-down" data-aos-duration="500" data-aos-delay="200" class="card1 group w-[22rem] h-[24rem] overflow-hidden rounded-lg" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('assets/treks/bero.jpg'); background-repeat: no-repeat; background-size: cover;">
                         <div class=" bg-black w-full h-full bg-opacity-60 relative px-10 py-16 translate-y-96 duration-200 transition-transform group-hover:translate-y-0">
                             <p class="text-white mt-20 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet eius delectus aperiam excepturi tempore, a id odio corporis eos unde tenetur ullam laudantium libero.</p>
                             <a href="" class="bg-white text-black px-5 py-2">Read More</a>
@@ -290,6 +307,17 @@
         </section>
         <!--End of Trek Cards  -->
 
+        <section id="instagram">
+            <div data-aos="fade-down" data-aos-mirror="false" class="w-full md:w-3/4 px-3 md:px-5 py-12 mx-auto">
+                <div class="w-full flex justify-center items-center gap-1">
+                    <div class="text-2xl">@mnac</div>
+                    <img src="https://sevensummittreks.com/themes-assets/images/icon/verified.png" width="20px">
+                </div>
+                <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                <div class="elfsight-app-d02267d0-e23d-4dd0-9b5e-bc4d9a50a9c7" data-elfsight-app-lazy></div>
+            </div>           
+        </section>
+
     </main>
 
     <!-- footer  -->
@@ -308,10 +336,14 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
         });
     </script>
 
@@ -323,52 +355,6 @@
       });
     </script>
 
-    <script>
-        const navbar = document.querySelector("#nav")
-        const menulist = document.querySelector("#menulist")
-        var menuline = document.querySelectorAll(".menu-line")
-        const blacklogo = document.querySelector("#blacklogo")
-        const whitelogo = document.querySelector("#whitelogo")
-
-
-        window.addEventListener('scroll', function(){
-            let value = window.scrollY;
-            if(value > 100){
-            //   navbar.classList.remove("bg-blue-800");
-            navbar.classList.add("bg-white");
-            menulist.classList.remove("md:text-white");
-            menulist.classList.add("md:text-black");
-            blacklogo.classList.add("block")
-            blacklogo.classList.remove("hidden")
-            whitelogo.classList.add("hidden")
-            whitelogo.classList.remove("block")
-
-                for (let i = 0; i < menuline.length; i++) {
-                    menuline[i].classList.remove("bg-white")
-                    menuline[i].classList.add("bg-black")
-                }
-
-            }
-            else{
-            navbar.classList.remove("bg-white");
-            menulist.classList.remove("md:text-black");
-            menulist.classList.add("md:text-white");
-            blacklogo.classList.add("hidden")
-            blacklogo.classList.remove("block")
-            whitelogo.classList.add("block")
-            whitelogo.classList.remove("hidden")
-                for (let i = 0; i < menuline.length; i++) {
-                    menuline[i].classList.add("bg-white")
-                    menuline[i].classList.remove("bg-black")
-                }
-            }
-
-        })
-
-
-    </script>
-
-
-
+    <script src="js/script.js"></script>
 </body>
 </html>
