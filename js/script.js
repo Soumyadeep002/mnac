@@ -13,6 +13,7 @@
         var menuline = document.querySelectorAll(".menu-line")
         const blacklogo = document.querySelector("#blacklogo")
         const whitelogo = document.querySelector("#whitelogo")
+        const backtotop = document.getElementById("backtotop")
 
 
         window.addEventListener('scroll', function(){
@@ -26,6 +27,7 @@
             blacklogo.classList.remove("hidden")
             whitelogo.classList.add("hidden")
             whitelogo.classList.remove("block")
+            backtotop.classList.remove("hidden")
 
                 for (let i = 0; i < menuline.length; i++) {
                     menuline[i].classList.remove("bg-white")
@@ -41,6 +43,7 @@
             blacklogo.classList.remove("block")
             whitelogo.classList.add("block")
             whitelogo.classList.remove("hidden")
+            backtotop.classList.add("hidden")
                 for (let i = 0; i < menuline.length; i++) {
                     menuline[i].classList.add("bg-white")
                     menuline[i].classList.remove("bg-black")
