@@ -11,66 +11,31 @@
 
     <title>MNAC</title>
 
-      <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <!-- Demo styles -->
-  <style>
-    
-    html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 70px;
-    }
-
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
+    <!-- Banner slider styles -->
+    <style>
+        
+       
+    </style>
 </head>
 <body class=" overflow-x-hidden bg-neutral-200 ">
+    <!-- pre-loader  -->
     <div id="preloader" class="fixed w-screen h-screen bg-gray-900 z-[100] flex flex-col justify-center items-center">
         <img id="heart_loader" class="w-[10rem]" src="assets/logo/mnac trans 1@5x.webp" alt="logo">
     </div>
+    <!-- end of pre-loader  -->
+
+    <!-- navbar  -->
     <header>
         <nav id="nav" class="fixed w-screen z-[98] transition-colors duration-300 drop-shadow-lg">
            
             <div id="navbar" class="w-full md:w-3/4 h-20 mx-auto flex justify-between items-center">
                 <div id="nav_title" class=" w-[5rem] ml-5">
-                    <a href="#">
+                    <a href="/">
                         <img id="blacklogo" class="hidden" src="assets/logo/Makaut NATURE & ADVENTURE CLUB 1.png" alt="MNAC Logo">
                         <img id="whitelogo" class="block" src="assets/logo/mnac trans 1@5x.png" alt="MNAC Logo">
                     </a>
@@ -83,25 +48,36 @@
                     <div id="line2" class="menu-line w-8 h-1 duration-500 transition-all bg-white rounded-xl"></div>
                     <div id="line3" class="menu-line w-8 h-1 duration-500 transition-all bg-white rounded-xl"></div>
                 </div>
-                <div id="mobnav" class="absolute md:static order-1 top-20 duration-200 hidden md:block my-auto w-full md:w-fit bg-white md:bg-transparent z-[98]">
+                <div class="hidden left-[0%]"></div>
+                <div class="hidden left-[100%]"></div>
+
+                <div id="mobnav" class="absolute md:static order-1 top-20 duration-200 left-[100%] md:block my-auto w-full md:w-fit bg-white md:bg-transparent z-[98]">
                     <ul id="menulist" class="flex flex-col md:flex-row gap-0 md:gap-10 mr-5 md:text-white">
-                        <a href="/"><li class="border-b-2 md:border-0 text-md md:text-xs border-blue-200 hover:bg-blue-400 md:hover:bg-transparent md:hover:scale-105 duration-100 transition-all cursor-pointer pl-16 py-5 md:p-0 text-left lg:text-sm font-semibold">HOME</li></a>
-                        <a href="#about"><li class="border-b-2 md:border-0 text-md md:text-xs border-blue-200 hover:bg-blue-400 md:hover:bg-transparent md:hover:scale-105 duration-100 transition-all cursor-pointer pl-16 py-5 md:p-0 text-left lg:text-sm font-semibold">ABOUT</li></a>
-                        <a href="#events"><li class="border-b-2 md:border-0 text-md md:text-xs border-blue-200 hover:bg-blue-400 md:hover:bg-transparent md:hover:scale-105 duration-100 transition-all cursor-pointer pl-16 py-5 md:p-0 text-left lg:text-sm font-semibold">EVENTS</li></a>
-                        <a href="#treks"><li class="border-b-2 md:border-0 text-md md:text-xs border-blue-200 hover:bg-blue-400 md:hover:bg-transparent md:hover:scale-105 duration-100 transition-all cursor-pointer pl-16 py-5 md:p-0 text-left lg:text-sm font-semibold">TREKS</li></a>
-                        <a href="#!"><li class="border-b-2 md:border-0 text-md md:text-xs border-blue-200 hover:bg-blue-400 md:hover:bg-transparent md:hover:scale-105 duration-100 transition-all cursor-pointer pl-16 py-5 md:p-0 text-left lg:text-sm font-semibold">CONTACT</li></a>
+                        <a class="mobnav-itm" href="/"><li class="border-b-2 md:border-0 text-md md:text-xs border-blue-200 hover:bg-blue-400 md:hover:bg-transparent md:hover:scale-105 duration-100 transition-all cursor-pointer pl-16 py-5 md:p-0 text-left lg:text-sm font-semibold">HOME</li></a>
+                        <a class="mobnav-itm" href="#about"><li class="border-b-2 md:border-0 text-md md:text-xs border-blue-200 hover:bg-blue-400 md:hover:bg-transparent md:hover:scale-105 duration-100 transition-all cursor-pointer pl-16 py-5 md:p-0 text-left lg:text-sm font-semibold">ABOUT</li></a>
+                        <a class="mobnav-itm" href="#events"><li class="border-b-2 md:border-0 text-md md:text-xs border-blue-200 hover:bg-blue-400 md:hover:bg-transparent md:hover:scale-105 duration-100 transition-all cursor-pointer pl-16 py-5 md:p-0 text-left lg:text-sm font-semibold">EVENTS</li></a>
+                        <a class="mobnav-itm" href="#treks"><li class="border-b-2 md:border-0 text-md md:text-xs border-blue-200 hover:bg-blue-400 md:hover:bg-transparent md:hover:scale-105 duration-100 transition-all cursor-pointer pl-16 py-5 md:p-0 text-left lg:text-sm font-semibold">TREKS</li></a>
+                        <a class="mobnav-itm" href="#!"><li class="border-b-2 md:border-0 text-md md:text-xs border-blue-200 hover:bg-blue-400 md:hover:bg-transparent md:hover:scale-105 duration-100 transition-all cursor-pointer pl-16 py-5 md:p-0 text-left lg:text-sm font-semibold">CONTACT</li></a>
                     </ul>
                 </div>
 
             </div>
         </nav>
     </header>
+    <!-- end of navbar  -->
 
 
-    <a href="#"><div id="backtotop" class="fixed z-[99] left-auto right-7 top-auto bottom-5 hidden">
-        <img class="w-[2.5rem] md:w-[3rem] drop-shadow-xl" src="https://www.sevensummittreks.com/themes-assets/images/backtotop.svg" alt="Seven Summit Treks">
-    </div></a>
 
+    <!-- back to top  -->
+    <a href="#">
+        <div id="backtotop" class="fixed z-[99] left-auto right-7 top-auto bottom-5 hidden">
+            <img class="w-[2.5rem] md:w-[3rem] drop-shadow-xl" src="https://www.sevensummittreks.com/themes-assets/images/backtotop.svg" alt="Seven Summit Treks">
+        </div>
+    </a>
+    <!-- end of back to top  -->
+
+
+    <!-- main content  -->
     <main>
         <!-- home banner  -->
         <section id="banner">
@@ -129,7 +105,7 @@
                             </div>
 
                             <div class="mt-10 w-full md:w-fit">
-                                <a href="" class=" bg-white text-black px-8 py-4 ">Explore More</a>
+                                <a href="#events" class=" bg-white text-black px-8 py-4 ">Explore More</a>
                             </div>
                         </div>
                     </div>
@@ -275,7 +251,7 @@
                             <a href="" class="bg-white text-black px-5 py-2">Read More</a>
                         </div>
                         <div class="absolute px-10 -translate-y-20 group-hover:-translate-y-80 duration-200 transition-all">
-                            <h1 class="text-xl text-white font-bold">Shusunia Hill</h1>
+                            <h1 class="text-xl text-white font-bold">Susunia Hill</h1>
                             <h3 class="text-md text-gray-300 font-bold">Purulia</h3>
                         </div>
                     </div>
@@ -314,6 +290,7 @@
         </section>
         <!--End of Trek Cards  -->
 
+        <!-- social media feed  -->
         <section id="instagram">
             <div data-aos="fade-down" data-aos-mirror="false" class="w-full md:w-3/4 px-3 md:px-5 py-12 mx-auto">
                 <div class="w-full flex justify-center items-center gap-1">
@@ -324,8 +301,10 @@
                 <div class="elfsight-app-d02267d0-e23d-4dd0-9b5e-bc4d9a50a9c7" data-elfsight-app-lazy></div>
             </div>           
         </section>
-
+        <!-- end of social media feed  -->
     </main>
+    <!-- end of main content  -->
+
 
  
 
@@ -392,6 +371,7 @@
               delay: 2500,
               disableOnInteraction: false,
             },
+            loop: true,
             pagination: {
               el: ".swiper-pagination",
               clickable: true,
@@ -399,14 +379,19 @@
         });
     </script>
 
+    <!-- AOS animation  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Initialize AOS -->
     <script>
       AOS.init({
         easing: 'ease-in-out',
         mirror: true,
       });
     </script>
+    <!-- end of AOS animation  -->
 
+
+    <!-- main javascript  -->
     <script src="js/script.js"></script>
 </body>
 </html>
