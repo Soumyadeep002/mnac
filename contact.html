@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>MNAC</title>
+
+        <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Banner slider styles -->
+    <style>
+        
+       
+    </style>
+</head>
+<body class=" overflow-x-hidden bg-neutral-200 ">
+    <!-- pre-loader  -->
+    <div id="preloader" class="fixed w-screen h-screen bg-gray-900 z-[100] flex flex-col justify-center items-center">
+        <img id="heart_loader" class="w-[10rem]" src="assets/logo/mnac trans 1@5x.webp" alt="logo">
+    </div>
+    <!-- end of pre-loader  -->
+
+    <!-- navbar  -->
+    <header>
+        <nav id="nav" class="fixed w-screen z-[98] transition-colors duration-300 drop-shadow-lg">
+           
+            <div id="navbar" class="w-full md:w-3/4 h-20 mx-auto flex justify-between items-center">
+                <div id="nav_title" class=" w-[5rem] ml-5">
+                    <a href="/">
+                        <img id="blacklogo" class="hidden" src="assets/logo/Makaut NATURE & ADVENTURE CLUB 1.png" alt="MNAC Logo">
+                        <img id="whitelogo" class="block" src="assets/logo/mnac trans 1@5x.png" alt="MNAC Logo">
+                    </a>
+                    
+
+                </div>
+
+                <div id="menu_btn" class="mr-5 order-2 md:hidden flex flex-col justify-center items-center gap-1.5 cursor-pointer">
+                    <div id="line1" class="menu-line w-8 h-1 duration-500 transition-all bg-white rounded-xl"></div>
+                    <div id="line2" class="menu-line w-8 h-1 duration-500 transition-all bg-white rounded-xl"></div>
+                    <div id="line3" class="menu-line w-8 h-1 duration-500 transition-all bg-white rounded-xl"></div>
+                </div>
+                <div class="hidden left-[0%]"></div>
+                <div class="hidden left-[100%]"></div>
+
+                <div id="mobnav" class="absolute md:static order-1 top-20 duration-200 left-[100%] md:block my-auto w-full md:w-fit bg-white md:bg-transparent z-[98]">
+                    <ul id="menulist" class="flex flex-col md:flex-row gap-0 md:gap-10 mr-5 md:text-white">
+                        <a class="mobnav-itm" href="/"><li class="border-b-2 md:border-0 text-md md:text-xs border-blue-200 hover:bg-blue-400 md:hover:bg-transparent md:hover:scale-105 duration-100 transition-all cursor-pointer pl-16 py-5 md:p-0 text-left lg:text-sm font-semibold">HOME</li></a>
+                        <a class="mobnav-itm" href="/about.html"><li class="border-b-2 md:border-0 text-md md:text-xs border-blue-200 hover:bg-blue-400 md:hover:bg-transparent md:hover:scale-105 duration-100 transition-all cursor-pointer pl-16 py-5 md:p-0 text-left lg:text-sm font-semibold">ABOUT</li></a>
+                        <a class="mobnav-itm" href="#events"><li class="border-b-2 md:border-0 text-md md:text-xs border-blue-200 hover:bg-blue-400 md:hover:bg-transparent md:hover:scale-105 duration-100 transition-all cursor-pointer pl-16 py-5 md:p-0 text-left lg:text-sm font-semibold">EVENTS</li></a>
+                        <a class="mobnav-itm" href="#treks"><li class="border-b-2 md:border-0 text-md md:text-xs border-blue-200 hover:bg-blue-400 md:hover:bg-transparent md:hover:scale-105 duration-100 transition-all cursor-pointer pl-16 py-5 md:p-0 text-left lg:text-sm font-semibold">TREKS</li></a>
+                        <a class="mobnav-itm" href="/contact.html"><li class="border-b-2 md:border-0 text-md md:text-xs border-blue-200 hover:bg-blue-400 md:hover:bg-transparent md:hover:scale-105 duration-100 transition-all cursor-pointer pl-16 py-5 md:p-0 text-left lg:text-sm font-semibold">CONTACT</li></a>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- end of navbar  -->
+
+
+
+    <!-- back to top  -->
+    <a href="#">
+        <div id="backtotop" class="fixed z-[99] left-auto right-7 top-auto bottom-5 hidden">
+            <img class="w-[2.5rem] md:w-[3rem] drop-shadow-xl" src="https://www.sevensummittreks.com/themes-assets/images/backtotop.svg" alt="Seven Summit Treks">
+        </div>
+    </a>
+    <!-- end of back to top  -->
+
+
+    <!-- main content  -->
+    <main>
+        <!-- home banner  -->
+        <section id="banner">
+            <div class="w-screen h-[50vh] md:h-[70vh] bg-bottom" style="background-image: url('assets/imgs/slider-1701763433.webp'); background-repeat: no-repeat; background-size: cover;">
+                <div class=" bg-black bg-opacity-70 w-full h-[50vh] md:h-[70vh] flex flex-col justify-center items-start text-white px-5 md:px-16 lg:px-28 gap-y-5">
+                    <div class="text-white w-full md:w-3/5 mx-auto">
+                        <h1 class=" text-3xl md:text-4xl lg:text-5xl font-bold drop-shadow-xl">Contact Us</h1>
+                        <p class="text-sm md:text-lg lg:text-xl my-5 md:my-6 lg:my-8 w-full md:3/5 lg:w-3/4 xl:w-1/2 ">We will be more than happy to assist you. Please feel free to make a call with your queries or fill out the contact form and we’ll get back to you as soon as possible!!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of home banner  -->
+
+
+        <!-- contact cards  -->
+        <section id="cards">
+            <div class="w-screen py-20 px-5">
+                <div class="w-full lg:w-2/3 xl:w-3/5 overflow-hidden mx-auto flex flex-col md:flex-row justify-center items-center gap-8">
+                    <div data-aos="fade-down" class="w-full md:w-1/2 flex flex-col items-start px-10 py-8 bg-white rounded-lg shadow-xl gap-2">
+                        <h2 class="text-2xl lg:text-3xl">Contact at</h2>
+                        <div class=" text-lg lg:text-xl"><i class="fa-solid fa-phone text-gray-900 text-3xl mr-3"></i> +00 00000000</div>
+                    </div>
+                    <div data-aos="fade-down" class="w-full md:w-1/2 flex flex-col items-start px-10 py-8 bg-white rounded-lg shadow-xl gap-2">
+                        <h2 class="text-2xl lg:text-3xl">Email us</h2>
+                        <div class=" text-lg lg:text-xl"><i class="fa-solid fa-envelope text-gray-900 text-3xl mr-3"></i>email@domain.com</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- end of contact  -->
+
+         <!-- socials  -->
+        <section>
+            <div class="flex flex-col justify-center items-center w-full">
+                <h3 data-aos="fade-down" class="text-2xl md:text-3xl">Follow us on social media</h3>
+                <div class="flex gap-12 md:gap-16 mt-5">
+                    <i data-aos="fade-down" data-aos-delay="100" class="fa-brands fa-facebook text-slate-900 text-3xl md:text-4xl"></i>
+                    <i data-aos="fade-down" data-aos-delay="200" class="fa-brands fa-square-instagram text-slate-900 text-3xl md:text-4xl"></i>
+                    <i data-aos="fade-down" data-aos-delay="300" class="fa-brands fa-square-x-twitter text-slate-900 text-3xl md:text-4xl"></i>
+                    <i data-aos="fade-down" data-aos-delay="400" class="fa-brands fa-youtube text-slate-900 text-3xl md:text-4xl"></i>
+                </div>
+            </div>
+        </section>
+         <!-- end of socials  -->
+
+
+         <!-- form card  -->
+         <section id="cards">
+            <div data-aos="fade-down" data-aos-duration="800" class="w-screen pt-20 px-5">
+                <div class="w-full lg:w-2/3 xl:w-3/5 overflow-hidden mx-auto flex flex-col md:flex-row justify-center items-center gap-8">
+                    <div class="w-full flex flex-col items-start px-10 py-8 bg-white rounded-lg shadow-xl">
+                        <form class="w-full">
+                            <div class="w-full">
+                             
+                              <div class="pb-8">                         
+                                <div class=" grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                                  <div class="sm:col-span-3">
+                                    <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+                                    <div class="mt-2">
+                                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full px-5 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required>
+                                    </div>
+                                  </div>
+                          
+                                  <div class="sm:col-span-3">
+                                    <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+                                    <div class="mt-2">
+                                      <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full px-5 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required>
+                                    </div>
+                                  </div>
+                          
+                                  <div class="sm:col-span-3">
+                                    <label for="contact" class="block text-sm font-medium leading-6 text-gray-900">Contact Number</label>
+                                    <div class="mt-2">
+                                      <input id="contact" name="contact" type="text" autocomplete="phone" class="block w-full px-5 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required>
+                                    </div>
+                                  </div>
+                                  <div class="sm:col-span-3">
+                                    <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+                                    <div class="mt-2">
+                                      <input id="email" name="email" type="email" autocomplete="email" class="block w-full px-5 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" required>
+                                    </div>
+                                  </div>
+                          
+                                 
+                          
+                                  <div class="col-span-full">
+                                    <label for="message" class="block text-sm font-medium leading-6 text-gray-900">Your Message</label>
+                                    <div class="mt-2">
+                                      <textarea name="message" id="message" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 px-6" rows="5" placeholder="Message" spellcheck="false"></textarea>
+                                    </div>
+                                  </div>
+                          
+                        
+                                </div>
+                              </div>
+                         
+                            </div>
+                          
+                            <div class="mt-6 flex items-center justify-start gap-x-6">
+                              <button disabled type="" class="bg-black text-white px-7 py-3">Submit</button>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- end of form card   -->
+       
+         <!-- map  -->
+         <section id="loaction">
+            <div data-aos="fade-down" data-aos-duration="800" class="w-screen pt-8 pb-16 px-5">
+                <div class="w-full lg:w-2/3 xl:w-3/5 overflow-hidden mx-auto flex flex-col md:flex-row justify-center items-center gap-8 rounded-lg shadow-xl">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7347.6628984987165!2d88.54545664816284!3d22.95643375576193!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8bf5871a9e0d7%3A0x3cbdf3b9f157e355!2sMaulana%20Abul%20Kalam%20Azad%20University%20of%20Technology!5e0!3m2!1sen!2sin!4v1713582010109!5m2!1sen!2sin" height="300" style="border:0; width: 100%" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
+                </div>
+            </div>
+         </section>
+         <!-- end of map  -->
+
+
+
+    </main>
+    <!-- end of main content  -->
+
+
+     <!-- footer  -->
+     <footer>
+        <div class="w-full bg-gray-900 pt-20">
+            <div class="w-full md:w-4/5 lg:w-3/5 mx-auto flex flex-col md:flex-row justify-between px-8 lg:gap-14">
+                <div class="w-full lg:w-1/4 py-4">
+                    <img class="w-[8rem]" src="assets/logo/mnac trans 1@5x.webp" alt="MNAC Logo">
+                    <div class="text-2xl font-bold text-white mt-4">MAKAUT NATURE & ADVENTURE CLUB</div>
+                    <div class="flex gap-6 mt-5">
+                        <i class="fa-brands fa-facebook text-white text-2xl"></i>
+                        <i class="fa-brands fa-square-instagram text-white text-2xl"></i>
+                        <i class="fa-brands fa-square-x-twitter text-white text-2xl"></i>
+                        <i class="fa-brands fa-youtube text-white text-2xl"></i>
+                    </div>
+                </div>
+                <div class="w-full lg:w-3/4 flex flex-col md:flex-row justify-between mb-10">
+                    <div class="text-white text-left">
+                        <h3 class="text-lg font-bold py-6">Events</h3>
+                        <ul class="flex flex-col gap-4 ">
+                            <li>Link 1</li>
+                            <li>Link 2</li>
+                            <li>Link 3</li>
+                            <li>Link 4</li>
+                        </ul>
+                    </div>
+                    <div class="text-white text-left">
+                        <h3 class="text-lg font-bold py-6">Treks</h3>
+                        <ul class="flex flex-col gap-4 ">
+                            <li>Link 1</li>
+                            <li>Link 2</li>
+                            <li>Link 3</li>
+                            <li>Link 4</li>
+                        </ul>
+                    </div>
+                    <div class="text-white text-left">
+                        <h3 class="text-lg font-bold py-6">Activities</h3>
+                        <ul class="flex flex-col gap-4 ">
+                            <li>Link 1</li>
+                            <li>Link 2</li>
+                            <li>Link 3</li>
+                            <li>Link 4</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                
+            </div>
+        </div>
+        <div class="w-full bg-gray-900 text-center text-white py-2">Copyright © 2024 soumyadeep. All Rights Reserved. </div>
+    </footer>
+    <!-- end of footer  -->
+
+ 
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+        });
+    </script>
+
+    <!-- AOS animation  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Initialize AOS -->
+    <script>
+      AOS.init({
+        easing: 'ease-in-out',
+        mirror: true,
+      });
+    </script>
+    <!-- end of AOS animation  -->
+
+
+    <!-- main javascript  -->
+    <script src="js/script.js"></script>
+</body>
+</html>
