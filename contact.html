@@ -29,18 +29,16 @@
     </div>
     <!-- end of pre-loader  -->
 
-    <!-- navbar  -->
-    <header>
+     <!-- navbar  -->
+     <header>
         <nav id="nav" class="fixed w-screen z-[98] transition-colors duration-300 drop-shadow-lg">
            
-            <div id="navbar" class="w-full md:w-3/4 h-20 mx-auto flex justify-between items-center">
-                <div id="nav_title" class=" w-[5rem] ml-5">
+            <div id="navbar" class="w-full md:w-3/4 mx-auto flex justify-between items-center">
+                <div id="nav_title" class=" w-[5rem] md:w-[6rem] ml-5 my-1">
                     <a href="index.html">
                         <img id="blacklogo" class="hidden" src="assets/logo/Makaut NATURE & ADVENTURE CLUB 1.png" alt="MNAC Logo">
                         <img id="whitelogo" class="block" src="assets/logo/mnac trans 1@5x.png" alt="MNAC Logo">
                     </a>
-                    
-
                 </div>
 
                 <div id="menu_btn" class="mr-5 order-2 md:hidden flex flex-col justify-center items-center gap-1.5 cursor-pointer">
@@ -69,11 +67,11 @@
 
 
     <!-- back to top  -->
-    <a href="#">
+    <!-- <a href="#">
         <div id="backtotop" class="fixed z-[99] left-auto right-7 top-auto bottom-5 hidden">
             <img class="w-[2.5rem] md:w-[3rem] drop-shadow-xl" src="https://www.sevensummittreks.com/themes-assets/images/backtotop.svg" alt="Seven Summit Treks">
         </div>
-    </a>
+    </a> -->
     <!-- end of back to top  -->
 
 
@@ -205,52 +203,68 @@
 
      <!-- footer  -->
      <footer>
-        <div class="w-full bg-gray-900 pt-20">
-            <div class="w-full md:w-4/5 lg:w-3/5 mx-auto flex flex-col md:flex-row justify-between px-8 lg:gap-14">
-                <div class="w-full lg:w-1/4 py-4">
-                    <img class="w-[8rem]" src="assets/logo/mnac trans 1@5x.webp" alt="MNAC Logo">
-                    <div class="text-2xl font-bold text-white mt-4">MAKAUT NATURE & ADVENTURE CLUB</div>
-                    <div class="flex gap-6 mt-5">
-                        <i class="fa-brands fa-facebook text-white text-2xl"></i>
-                        <i class="fa-brands fa-square-instagram text-white text-2xl"></i>
-                        <i class="fa-brands fa-square-x-twitter text-white text-2xl"></i>
-                        <i class="fa-brands fa-youtube text-white text-2xl"></i>
-                    </div>
-                </div>
-                <div class="w-full lg:w-3/4 flex flex-col md:flex-row justify-between mb-10">
-                    <div class="text-white text-left">
-                        <h3 class="text-lg font-bold py-6">Events</h3>
-                        <ul class="flex flex-col gap-4 ">
-                            <li>Link 1</li>
-                            <li>Link 2</li>
-                            <li>Link 3</li>
-                            <li>Link 4</li>
-                        </ul>
-                    </div>
-                    <div class="text-white text-left">
-                        <h3 class="text-lg font-bold py-6">Treks</h3>
-                        <ul class="flex flex-col gap-4 ">
-                            <li>Link 1</li>
-                            <li>Link 2</li>
-                            <li>Link 3</li>
-                            <li>Link 4</li>
-                        </ul>
-                    </div>
-                    <div class="text-white text-left">
-                        <h3 class="text-lg font-bold py-6">Activities</h3>
-                        <ul class="flex flex-col gap-4 ">
-                            <li>Link 1</li>
-                            <li>Link 2</li>
-                            <li>Link 3</li>
-                            <li>Link 4</li>
-                        </ul>
-                    </div>
-                </div>
-        
-                
+        <div class="w-full bg-gray-900 pt-10">
+            <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+                <div class="md:flex md:justify-between mx-auto w-fit md:w-full gap-6">
+                  <div class="mb-8 md:mb-0 w-[20rem]">
+                      <a href="" class="flex flex-col md:flex-row items-center gap-4">
+                          <img src="assets\logo\mnac trans 1@5x.webp" class="w-[6rem] md:w-[8rem]" alt="FlowBite Logo" />
+                          <div class="w-fit">
+                              <span class="self-center text-sm md:text-lg lg:text-2xl font-semibold whitespace-nowrap dark:text-white">MAKAUT NATURE & ADVENTURE CLUB</span>
+                              <div class="flex justify-center md:justify-start items-center md:items-start gap-6 mt-5">
+                                <i class="fa-brands fa-facebook text-white text-2xl"></i>
+                                <i class="fa-brands fa-square-instagram text-white text-2xl"></i>
+                                <i class="fa-brands fa-square-x-twitter text-white text-2xl"></i>
+                                <i class="fa-brands fa-youtube text-white text-2xl"></i>
+                            </div>
+                          </div>
+                      </a>
+                      
+                  </div>
+                  <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                      <div>
+                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                              <li class="mb-4">
+                                  <a href="#" class="hover:underline">Flowbite</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="hover:underline">Tailwind CSS</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div>
+                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                              <li class="mb-4">
+                                  <a href="#" class="hover:underline ">Github</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="hover:underline">Discord</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div>
+                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                              <li class="mb-4">
+                                  <a href="#" class="hover:underline">Privacy Policy</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+              <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+              <div class="flex items-center justify-center">
+                  <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="/index.html" class="hover:underline">soumyadeep002</a>. All Rights Reserved.
+                  </span>
+              </div>
             </div>
         </div>
-        <div class="w-full bg-gray-900 text-center text-white py-2">Copyright © 2024 soumyadeep. All Rights Reserved. </div>
     </footer>
     <!-- end of footer  -->
 
