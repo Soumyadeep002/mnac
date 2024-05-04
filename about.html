@@ -12,9 +12,9 @@
     <title>Makaut Nature & Adventure Club</title>
 
         <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/swiper/swiper-bundle.min.js" />
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/aos/aos.css" />
 
     <!-- Banner slider styles -->
     <style>
@@ -36,7 +36,7 @@
             <div id="navbar" class="w-full md:w-3/4 mx-auto flex justify-between items-center">
                 <div id="nav_title" class=" w-[5rem] md:w-[6rem] ml-5 my-1">
                     <a href="index.html">
-                        <img id="blacklogo" class="hidden" src="assets/logo/Makaut NATURE & ADVENTURE CLUB 1.png" alt="MNAC Logo">
+                        <img id="blacklogo" class="hidden" src="assets/logo/Makaut-NATURE-&-ADVENTURE-CLUB-1.webp" alt="MNAC Logo">
                         <img id="whitelogo" class="block" src="assets/logo/mnac-trans-1@5x.webp" alt="MNAC Logo">
                     </a>
                 </div>
@@ -164,13 +164,15 @@
  
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
         var swiper = new Swiper(".mySwiper", {
             autoplay: {
-              delay: 2500,
+              delay: 4000,
               disableOnInteraction: false,
             },
             loop: true,
@@ -178,11 +180,17 @@
               el: ".swiper-pagination",
               clickable: true,
             },
+            on: {
+                autoplayTimeLeft(s, time, progress) {
+                  progressCircle.style.setProperty("--progress", 1 - progress);
+                  progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+                }
+              }
         });
     </script>
 
     <!-- AOS animation  -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/aos/aos.js"></script>
     <!-- Initialize AOS -->
     <script>
       AOS.init({
