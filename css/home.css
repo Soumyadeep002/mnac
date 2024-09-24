@@ -1132,6 +1132,14 @@ video {
   background-position: center;
 }
 
+.bg-\[90\%\] {
+  background-position: 90%;
+}
+
+.bg-\[10\%\] {
+  background-position: 10%;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
